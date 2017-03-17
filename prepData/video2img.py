@@ -50,7 +50,5 @@ while success:
     cv2.imwrite(outfile, image)
     # cv2.imwrite("../images/frame%d.jpg" % count, image)     # save frame as JPEG file
     count += 1
-# remove last frame, which is likely to be broken
-os.remove(outfile)
 print "Coverted to %d frame(s)" % count
 
