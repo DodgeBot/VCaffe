@@ -22,6 +22,7 @@ if [ -f $datedir/test.txt ]; then
 	rm $datedir/test.txt
 fi
 
+
 for label in {0,1,2}; do
 	camdir="$datedir/cam$label"
 	cd $camdir
@@ -65,6 +66,10 @@ for label in {0,1,2}; do
 		# pipe video data to total data
 		cat $dir/train.txt >> $datedir/train.txt
 		cat $dir/test.txt >> $datedir/test.txt
+
+		# each time creating new files anyways, no need to keep
+		rm $dir/train.txt
+		rm $dir/test.txt
 
 		cd $camdir
 	done
