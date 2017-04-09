@@ -3,7 +3,7 @@
 # N.B. set the path to the imagenet train + val data dirs
 set -e
 
-FYP_WS=/home/fyp/FYP/fyp_ws/data/170401
+FYP_WS=/home/fyp/HDD/data/170401
 DATA=/home/fyp/FYP/fyp_ws/data/170401
 TOOLS=/home/fyp/FYP/caffe-master/build/tools
 
